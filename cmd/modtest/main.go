@@ -2,10 +2,12 @@ package main
 
 import (
 	"fmt"
-	"github.com/vinmazzi/gocmdtest/internal/auth"
+	auth "github.com/vinmazzi/gocmdtest/internal"
+	"github.com/vinmazzi/gocmdtest/models"
 )
 
 func main() {
 	auth.Make()
 	fmt.Println("Finishing command execution.")
+	models.TestModel()
 }
